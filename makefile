@@ -18,11 +18,8 @@ build/Administrator.o: src/Administrator.c
 build/TP_lab5.o: src/TP_lab5.c
 	gcc -std=c99 -c -MD src/TP_lab5.c -o build/TP_lab5.o
 
-build/sqlite3.o: src/sqlite3.c
-	gcc -std=c99 -c -MD src/sqlite3.c -o build/sqlite3.o	
-
-bin/banking_system: build/Client.o build/Operator.o build/Administrator.o build/TP_lab5.o build/sqlite3.o 
-	gcc -std=c99 build/Client.o build/Operator.o build/Administrator.o build/TP_lab5.o build/sqlite3.o  -o bin/banking_system -lsqlite3
+bin/banking_system: build/Client.o build/Operator.o build/Administrator.o build/TP_lab5.o 
+	gcc -std=c99 build/Client.o build/Operator.o build/Administrator.o build/TP_lab5.o  -o bin/banking_system -lsqlite3
 
 include $(wildcard *.d) 
 
