@@ -13,4 +13,4 @@ before_install:
   - cd ..
 
 script:
-- make test
+- make
