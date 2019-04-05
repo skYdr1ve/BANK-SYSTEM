@@ -18,7 +18,7 @@ int callback(void *data, int argc, char **argv, char **azColName) {
 
 struct User enterUser() {
 	struct User newUser;
-	printf("Enter firstname\n");
+	printf("Enter firstname \n");
 	scanf("%s", newUser.firstname);
 	printf("Enter lastname\n");
 	scanf("%s", newUser.lastname);
